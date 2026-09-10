@@ -29,7 +29,6 @@ Tudo está marcado com valores de exemplo. Busque e substitua em `index.html`:
 | `4,9` | nota real do Google (aparece no hero e no contato) |
 | `LINK_AVALIACOES_GOOGLE` | link do perfil da clínica no Google (Maps > Compartilhar) |
 | `Odont` | nome completo desse convênio |
-| `Dr(a). Nome Sobrenome · CRO-UF 00000` | responsável técnico |
 
 **Mapa:** no Google Maps, abra a clínica > Compartilhar > Incorporar um mapa, copie o `src` do iframe e cole no `<iframe>` da seção de contato.
 
