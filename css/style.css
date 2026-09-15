@@ -625,9 +625,22 @@ h2 {
 .card--cta {
   position: relative;
   overflow: hidden;
-  justify-content: flex-end;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 40px;
   background: var(--green-700);
   color: var(--cream);
+}
+.card--cta .card__kicker,
+.card--cta h3,
+.card--cta p { grid-column: 1; }
+.card--cta p { max-width: 52ch; }
+.card--cta .btn {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  align-self: center;
 }
 .card--cta::before {
   content: "";
@@ -641,7 +654,6 @@ h2 {
   transform: rotate(22deg);
   pointer-events: none;
 }
-.card--cta .btn { align-self: flex-start; margin-top: 8px; }
 
 /* ---------- Convênios ---------- */
 .plans { background: var(--cream); }
@@ -937,6 +949,8 @@ h2 {
 
 @media (max-width: 640px) {
   .cards { grid-template-columns: 1fr; }
+  .card--cta { grid-template-columns: 1fr; }
+  .card--cta .btn { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; }
   .plans__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .plans__grid li { min-height: 76px; font-size: 1.15rem; padding: 14px; }
   .contact__info { grid-template-columns: 1fr; gap: 20px; }
