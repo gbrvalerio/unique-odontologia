@@ -2,9 +2,9 @@
 
 Site estático (HTML + CSS + um JS pequeno), sem build. É só abrir o `index.html` ou subir a pasta em qualquer hospedagem.
 
-**No ar:** https://gbrvalerio.github.io/unique-odontologia/ (GitHub Pages, publica direto da branch `main`). Todo push na `main` atualiza o site em cerca de 1 minuto.
+**Domínio:** https://uniqueodontologiabsb.com.br/ (GitHub Pages, publica direto da branch `main`). Todo push na `main` atualiza o site em cerca de 1 minuto.
 
-Quando for para o domínio próprio, troque a URL absoluta de `assets/og.png` no `<head>` (meta `og:image` e JSON-LD) pelo novo endereço.
+O arquivo `CNAME` mantém o domínio personalizado no GitHub Pages. O DNS é gerenciado no Registro.br: o domínio principal usa os quatro registros A do GitHub Pages (`185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`); `www` usa CNAME para `gbrvalerio.github.io`. O endereço com `www` e a URL antiga do GitHub Pages redirecionam para o domínio principal após a configuração do DNS. HTTPS deve permanecer obrigatório assim que o certificado estiver disponível.
 
 ## Estrutura
 
