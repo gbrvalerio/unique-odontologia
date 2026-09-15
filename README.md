@@ -13,7 +13,15 @@ index.html        página única
 css/style.css     estilos
 js/main.js        menu mobile, header ao rolar, animações de entrada
 assets/           logos com fundo transparente, favicon, imagem de compartilhamento
+robots.txt        acesso dos buscadores e endereço do sitemap
+sitemap.xml       URL canônica da página inicial
 ```
+
+## SEO e compartilhamento
+
+O `<head>` de `index.html` contém o título e a descrição para buscas locais, a URL canônica, Open Graph e Twitter Cards. A imagem de compartilhamento é `assets/og.png`, em 1200 × 630 pixels. Ao trocar a imagem, atualize também as dimensões e os textos alternativos nos metadados.
+
+O JSON-LD relaciona a clínica (`Dentist`), o site (`WebSite`) e a página (`WebPage`). Mantenha descrição, telefone, endereço e horários consistentes com o conteúdo visível. Ao revisar o texto de apresentação, atualize a descrição principal, Open Graph, Twitter Cards e as descrições no JSON-LD. O sitemap lista apenas a página inicial; as seções com `#` são partes dessa mesma página.
 
 ## Dados da clínica
 
@@ -24,7 +32,7 @@ Contato, endereço, horário, mapa, Instagram e nota do Google já estão preenc
 | WhatsApp `5561982212650` | todos os links `wa.me` (header, hero, cards, contato, botão flutuante) |
 | Telefone fixo `(61) 3039-5443` | seção Contato, rodapé e `telephone` no JSON-LD |
 | Endereço | seção Contato, rodapé e `address` no JSON-LD |
-| Horário | seção Contato, rodapé e `openingHours` no JSON-LD |
+| Horário | seção Contato, rodapé e `openingHoursSpecification` no JSON-LD |
 | Nota do Google `4,6` | hero (cápsula creme) e seção Contato. Não atualiza sozinha: confira no perfil de vez em quando |
 | Mapa | `src` do `<iframe>` na seção Contato |
 | Instagram | seção Contato, rodapé e `sameAs` no JSON-LD |
