@@ -39,6 +39,12 @@ Contato, endereço, horário, mapa, Instagram e nota do Google já estão preenc
 
 **Pendência:** confirmar o nome completo do convênio "Odont" na seção Convênios.
 
+## Google Search Console
+
+O domínio está verificado no Search Console (conta Google do Gabriel) pelo arquivo `googlecd335df39ecec3a3.html` na raiz. **Não apague esse arquivo**, senão a verificação cai. O sitemap (`sitemap.xml`) já foi enviado por lá.
+
+Depois de uma mudança relevante no conteúdo, dá para pedir um novo rastreamento em Search Console > Inspeção de URL > Solicitar indexação.
+
 ## Fontes
 
 Fraunces (títulos) e Figtree (texto) via Google Fonts. Se quiser servir localmente, baixe os arquivos e troque o `<link>` no `<head>`.
