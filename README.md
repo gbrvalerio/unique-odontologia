@@ -39,6 +39,10 @@ Contato, endereço, horário, mapa, Instagram e nota do Google já estão preenc
 
 **Pendência:** confirmar o nome completo do convênio "Odont" na seção Convênios.
 
+## Google Ads
+
+A tag do Google (gtag.js) da conta `AW-18531006634` está no início do `<head>` de `index.html`. Para trocar a conta, atualize o ID nas duas ocorrências.
+
 ## Google Search Console
 
 O domínio está verificado no Search Console (conta Google do Gabriel) pelo arquivo `googlecd335df39ecec3a3.html` na raiz. **Não apague esse arquivo**, senão a verificação cai. O sitemap (`sitemap.xml`) já foi enviado por lá.
